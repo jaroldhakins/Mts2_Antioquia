@@ -1,7 +1,10 @@
 from django.urls import path
 
-from valleAburra.views import average
+from valleAburra.views import listarCiudad, average, comunas, ciudades
 
 urlpatterns = [
-    path('valormt2', average),
+    path('lotes_ciudad/<str:barrio>', listarCiudad),
+    path('valormt2/', average),
+    path('ciudad/<str:ciudad>', comunas),
+    path('ciudades/', ciudades),
 ]

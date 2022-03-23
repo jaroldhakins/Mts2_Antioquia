@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barrios</title>
+</head>
+<body>
+    <h1>Barrios</h1>
+    <div>
+        <ul>
+            {% for barrio in conjunto %}
+                <li><a href="/valleAburra/lotes_ciudad/{{barrio}}">{{barrio}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

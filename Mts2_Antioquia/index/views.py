@@ -3,4 +3,10 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('Hello')
+    return render(request, 'index.html')
+
+
+"""def barrios(request, ciudad):
+    if ciudad == 'Medellin':
+    return render(request, 'barrio.html')
+"""
