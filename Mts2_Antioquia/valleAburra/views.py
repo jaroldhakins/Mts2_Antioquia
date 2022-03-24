@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from predios.models import valle_aburra
+from API.models import valle_aburra
 
 
 def listarCiudad(request, barrio):
